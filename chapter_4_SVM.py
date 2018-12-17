@@ -22,10 +22,10 @@ for train_index, valid_index in sss.split(x_vars, y_vars.reshape(-1)):
 
 #model setting
 sess = tf.Session()
-learning_rate = 0.01
+learning_rate = 0.001
 batch_size = 60
 epochs = 5000
-hyper_c = 0.1
+hyper_c = 1000
 
 # model structure
 X_input = tf.placeholder(dtype=tf.float32, shape=[None, 2])
